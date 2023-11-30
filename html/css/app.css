@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Koulen&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green:#38C378;
+    --orange:#F9A62B;
+    --red:#FA1939;
+    --pink:#FA5480;
+    --skyblue:#4390F8;
+    --font-1:"Koulen";
+    --font-2:"Battambang";
+    --font-size:18px;
+}
+/* header */
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.header .box{
+    width: 75%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* head section */
+/* navbar section */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--red);
+    z-index: 10;
+}
+.navbar .nav{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    padding: 15px 20px;
+}
+.nav ul li a{
+    font-family: var(--font-1);
+    font-size: var(--font-size);
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.nav ul a:hover{
+    opacity: 1;
+}
+.nav ul li.active{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    opacity: 0.4;
+}
+/* navbar section */
+/*content section*/
+.content{
+    width: 75%;
+    height: 512px;
+    background-color: brown;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content-1{
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-1 .box-1{
+    width: 60%;
+    background-color: blue;
+    height: 49%;
+    position: relative;
+    font-family: var(--font-2);
+}
+.box-1 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-1 .box-2{
+    width: 39%;
+    height: 49%;
+    background-color: green;
+}
+.content .content-2{
+    width: 29%;
+    height: 100%;
+    background-color: aqua;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+.box-1 .text{
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    padding: 0px 10px;
+    color: white;
+    transition: 0.4s;
+}
+.box-1:hover .text{
+    height: 143px;
+    top: 35%;
+    transition: 0.4s;
+}
+.box-1:hover .text h2{
+    color: red;
+}
+.date{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 10px;
+    color: white;
+}
+.corner{
+    width: 80px;
+    height: 40px;
+    background-color: var(--orange);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+}
+.border{
+    width: 20px;
+    height: 40px;
+    background-color: var(--orange);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 4.91%;
+    left: 15.99%;
+}
+/*content section*/
+/*video section */
+.video{
+    width: 75%;
+    height: 60px;
+    border: 5px solid red;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    margin: auto;
+}
+.corner-1{
+    width: 120px;
+    height: 60px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-1);
+    font-size: var(--font-size);
+}
+.corner-1 p{
+    color: white;
+}
+.video .border-1{
+    width: 40px;
+    height: 60px;
+    background-color: var(--red);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+.content-box{
+    width: 75%;
+    height: 350px;
+    margin: auto;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.content-box .content-3{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 15px auto;
+}
+.content-3 .box-3{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    position: relative;
+}
+.box-3 img{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+.box-3 .text-1{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 5px;
+    font-family: var(--font-2);
+    font-size: var(--font-size);
+    color: black;
+}
+.content-box .content-box2{
+    width: 100%;
+    height: 65%;
+    background-color:red;
+    display: flex;
+    justify-content: space-between;
+}
+.content-box2{
+    width: 75%;
+    height: 500px;
+    background-color: red;
+    margin: auto;
+
+}
+.content-box2 .content-4{
+    width: 65%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+}
+.content-4 .small-box{
+    width: 7%;
+    height: 40%;
+    background-color: yellow;
+    margin-left: 10px;
+}
+.small-box img{
+    width: 100%;
+    height: 80%;
+}
+/* video section */
+
